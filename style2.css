@@ -1,0 +1,27 @@
+ 
+button{
+    display:  none;
+}
+button.active{
+    display: flex;
+}
+.win{
+    background-color: green;
+}
+.tie{
+   
+    font-weight: 600;
+    font-size: 20px;
+    color: red;
+    padding-inline: 12px;
+}
+
+.ghostt{
+    font-size: 25px;
+    color: green;
+    font-weight: 700;
+    padding-inline: 12px;
+    font-family: "Playfair Display", serif;
+    padding-block: 4px;
+
+}

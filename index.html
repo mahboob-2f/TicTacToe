@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+
+        .ghost {
+            font-family: "Dancing Script", cursive;
+            font-weight: bold;
+        }
+
+        footer:hover {
+            display: none;
+            transition: all;
+            padding: 4px;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .duke {
+            /* font-family: "Playwrite HU", cursive;   */
+            font-family: "Dancing Script", cursive;
+            font-weight: 700;
+            font-size: 20px;
+            transform: skew(-15deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bg-[#cffafe] relative w-[100vw] h-[100vh] flex justify-center items-center ">
+        <div class=" flex flex-col justify-center items-center">
+            <h1 class="absolute top-6 text-[34px] font-[700] max-sm:top-10 ">Tic Tac Toe</h1>
+            <div
+                class="relative bg-white flex flex-col justify-center max-mobile:min-w-[315px] items-center min-w-[384px] max-sm:min-h-[430px] min-h-[460px]  mobile:max-tab:min-w-[350px]  rounded-md shadow-2xl
+                    max-sm:max-h-[300px]     
+                ">
+                <h1 class="absolute top-6 text-[16px] font-[600]    font-serif    border-0   rounded-md px-4 bg-[#d9d1d1] mb-1 p-[6px]  player-info">  </h1>
+                <div class="  absolute top-21 grid grid-cols-3 gap-x-6 gap-y-5  ">
+                    <div
+                        class=" cursor-pointer   box box-1 w-[80px] h-[80px]  max-sm:w-[70px] max-sm:h-[70px] bg-amber-300 hover:bg-[#eab308] transition-all duration-150 rounded-lg hover:drop-shadow-xl
+                                text-6xl flex justify-center items-center text-white font-[700]
+                        ">
+                    </div>
+                    <div
+                        class=" cursor-pointer   box box-2 w-[80px] h-[80px] text-6xl flex justify-center items-center text-white font-[700]  max-sm:w-[70px] max-sm:h-[70px] bg-amber-300 hover:bg-[#eab308] transition-all duration-150 rounded-lg hover:drop-shadow-xl">
+                    </div>
+                    <div
+                        class=" cursor-pointer   box box-3 w-[80px] h-[80px] text-6xl flex justify-center items-center text-white font-[700] max-sm:w-[70px] max-sm:h-[70px] bg-amber-300 hover:bg-[#eab308] transition-all duration-150 rounded-lg hover:drop-shadow-xl">
+                    </div>
+                    <div
+                        class=" cursor-pointer   box box-4 w-[80px] h-[80px] text-6xl flex justify-center items-center text-white font-[700]  max-sm:w-[70px] max-sm:h-[70px] bg-amber-300 hover:bg-[#eab308] transition-all duration-150 rounded-lg hover:drop-shadow-xl">
+                    </div>
+                    <div
+                        class=" cursor-pointer   box box-5 w-[80px] h-[80px] text-6xl flex justify-center items-center text-white font-[700]  max-sm:w-[70px] max-sm:h-[70px] bg-amber-300 hover:bg-[#eab308] transition-all duration-150 rounded-lg hover:drop-shadow-xl">
+                    </div>
+                    <div
+                        class=" cursor-pointer   box box-6 w-[80px] h-[80px] text-6xl flex justify-center items-center text-white font-[700]  max-sm:w-[70px] max-sm:h-[70px] bg-amber-300 hover:bg-[#eab308] transition-all duration-150 rounded-lg hover:drop-shadow-xl">
+                    </div>
+                    <div
+                        class=" cursor-pointer   box box-7 w-[80px] h-[80px] text-6xl flex justify-center items-center text-white font-[700] max-sm:w-[70px] max-sm:h-[70px] bg-amber-300 hover:bg-[#eab308] transition-all duration-150 rounded-lg hover:drop-shadow-xl">
+                    </div>
+                    <div
+                        class=" cursor-pointer   box box-8 w-[80px] h-[80px] text-6xl flex justify-center items-center text-white font-[700]  max-sm:w-[70px] max-sm:h-[70px] bg-amber-300 hover:bg-[#eab308] transition-all duration-150 rounded-lg hover:drop-shadow-xl">
+                    </div>
+                    <div
+                        class=" cursor-pointer   box box-7 w-[80px] h-[80px] text-6xl flex justify-center items-center text-white font-[700]    max-sm:w-[70px] max-sm:h-[70px] bg-amber-300 hover:bg-[#eab308] transition-all duration-150 rounded-lg hover:drop-shadow-xl">
+                    </div>
+                </div>
+                <button  newButton   
+                    class="absolute bottom-7 bg-black text-center text-white p-2 rounded-sm px-6 hover:bg-[#474343] hover:text-white transition-all duration-200">New
+                    Game</button>
+                <footer class="text-black absolute bottom-6 right-3 font-[italic] z-50 bg-white pl-2"><span
+                        class="ghost">created <br><span
+                            class="ghost absolute top-[14px] left-5 text-center flex justify-center ">by</span> </span>
+                </footer>
+                <p class="absolute bottom-4 right-4 z-10 duke">mahi</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
